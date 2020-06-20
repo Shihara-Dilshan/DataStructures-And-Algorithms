@@ -35,4 +35,39 @@ class Stack {
   peek() {
     return this.storage[this.count - 1];
   }
+
+  //check the stack is empty or not
+  isEmpty() {
+    if (this.count == 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
+
+class Main{
+  
+  static main(){
+    let stack1 = new Stack();//create a new stack 
+    
+    stack1.push(1);//add few elements to the stack 
+    stack1.push(45);
+    stack1.push(98);
+    stack1.push(5);
+    stack1.push(23);
+
+    console.log(stack1.peek());//print the last element of the stack 
+
+    stack1.pop();//remove the last element from the stack
+
+    console.log(stack1.peek());//print the new last element of the stack 
+
+    console.log(stack1.isEmpty());//check the stack is empty or not
+
+    console.log(stack1.size())//print the size of the stack
+  }
+}
+
+//do not edit this line
+Main.main();

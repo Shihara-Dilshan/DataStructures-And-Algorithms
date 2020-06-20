@@ -1,5 +1,28 @@
 /*implementing stacks using java */
 
+public class main{
+    public static void main(String args[]) throws Exception{
+        stacks stack1 = new stacks();//create a new stack
+
+        stack1.push(1);//add few elements to the stack 
+        stack1.push(45);
+        stack1.push(98);
+        stack1.push(5);
+        stack1.push(23);
+
+        System.out.println(stack1.peek());//print the last element of the stack 
+
+        stack1.pop();//remove the last element from the stack
+
+        System.out.println(stack1.peek());//print the new last element of the stack 
+       
+        System.out.println(stack1.isEmpty());//check the stack is empty or not
+
+        System.out.println(stack1.size());//print the size of the stack
+    }
+} 
+
+
 class Node{
     private int value;
     private Node nextNode;
@@ -72,5 +95,19 @@ public class stacks{
     public int peek(){
         return top.getValue();
     }
+
+    //check the stack is empty or not
+    public boolean isEmpty(){
+        if(this.count == 0)
+        {
+            return true;
+        }else{
+            return false;
+        }
+
+    }
+
+
+    
 
 }

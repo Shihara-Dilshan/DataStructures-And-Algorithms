@@ -5,15 +5,15 @@ interface stacksAbstract {
   pop(): any;
   size(): number;
   peek(): any;
+  isEmpty(): boolean;
 }
 
-class stacks implements stacksAbstract{
-
-  private count:number;
-  private storage:object;
+class stacks implements stacksAbstract {
+  private count: number;
+  private storage: object;
 
   //initialize ES6 constructor
-  constructor(){
+  constructor() {
     this.count = 0; //To count the current number of items in the stack
     this.storage = {}; //An empty object to store a stack
   }
@@ -25,7 +25,7 @@ class stacks implements stacksAbstract{
   }
 
   //Remove the last element from the stack and return the removed value
-  public pop():any {
+  public pop(): any {
     //if the stack is empty return undefined
     if (this.count === 0) {
       return undefined;
@@ -43,10 +43,41 @@ class stacks implements stacksAbstract{
   }
 
   //Get the last element of the stack(but not remove the value)
-  public peek():any {
+  public peek(): any {
     return this.storage[this.count - 1];
   }
 
+  //check the stack is empty or not
+  isEmpty(): boolean {
+    if (this.count === 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
 
+class Main{
+  public static main():void{
+    let stack1 = new stacks();//create a new stack 
+    
+    stack1.push(1);//add few elements to the stack 
+    stack1.push(45);
+    stack1.push(98);
+    stack1.push(5);
+    stack1.push(23);
 
+    console.log(stack1.peek());//print the last element of the stack 
+
+    stack1.pop();//remove the last element from the stack
+
+    console.log(stack1.peek());//print the new last element of the stack 
+
+    console.log(stack1.isEmpty());//check the stack is empty or not
+
+    console.log(stack1.size())//print the size of the stack
+  }
+}
+
+//do not edit this line
+Main.main();
