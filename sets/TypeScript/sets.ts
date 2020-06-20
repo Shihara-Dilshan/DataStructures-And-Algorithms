@@ -7,7 +7,7 @@ interface setsAbstract{
     union(otherSet:sets):Array<any>;
     intersection(otherSet:sets):Array<any>;
     difference(otherSet:sets):Array<any>;
-    subset():boolean;
+    subset(otherSet:sets):boolean;
 }
 
 class sets implements setsAbstract{
@@ -102,8 +102,16 @@ class sets implements setsAbstract{
 
     }
 
-    subset = ():boolean => {
-        return true;
+    //check another set is subset of this set or not
+     subset = (otherSet:sets):boolean => {
+        let commanCounter = otherSet.values().length;//legth of the otherset
+
+        let interSectionlen = this.intersection(otherSet).length;//how many comman items are exist between these 2 sets
+
+        if(commanCounter === interSectionlen){
+            return true;
+        }
+        return false;
     }
 
 }
@@ -115,7 +123,7 @@ class Main{
 
         set1.add(1);//add new items to the set1
         set1.add(2221);
-        set1.add(2221);//trying to add a duplicate value
+        set1.add(123);//trying to add a duplicate value
         set1.add(33);
 
         set2.add(221);//add new items to the set2
@@ -135,6 +143,8 @@ class Main{
         console.log(set1.intersection(set2));//get the common value/s between two sets
 
         console.log(set1.difference(set2));//get the uncommon value/s between two sets
+
+        console.log(set1.subset(set2));//checking is that set2 is a subset of set1 or not
     }
 }
 

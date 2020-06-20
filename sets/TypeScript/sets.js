@@ -72,8 +72,14 @@ var sets = /** @class */ (function () {
             });
             return differenceSet.values();
         };
-        this.subset = function () {
-            return true;
+        //check another set is subset of this set or not
+        this.subset = function (otherSet) {
+            var commanCounter = otherSet.values().length; //legth of the otherset
+            var interSectionlen = _this.intersection(otherSet).length; //how many comman items are exist between these 2 sets
+            if (commanCounter === interSectionlen) {
+                return true;
+            }
+            return false;
         };
         this.set = []; //create an empty set
     }
@@ -87,9 +93,9 @@ var Main = /** @class */ (function () {
         var set2 = new sets(); //create another new set
         set1.add(1); //add new items to the set1
         set1.add(2221);
-        set1.add(2221); //trying to add a duplicate value
+        set1.add(123); //trying to add a duplicate value
         set1.add(33);
-        set2.add(221); //add new items to the set2
+        //set2.add(221);//add new items to the set2
         set2.add(123);
         set2.add(33);
         console.log(set1.has(1)); //check if the specific number exist on the set1
@@ -100,6 +106,7 @@ var Main = /** @class */ (function () {
         console.log(set1.union(set2)); //adding to sets
         console.log(set1.intersection(set2)); //get the common value/s between two sets
         console.log(set1.difference(set2)); //get the uncommon value/s between two sets
+        console.log(set1.subset(set2)); //checking is that set2 is a subset of set1 or not
     };
     return Main;
 }());
