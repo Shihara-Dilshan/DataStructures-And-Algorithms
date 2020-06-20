@@ -1,22 +1,34 @@
 # implementing stacks using python
 
-#dsdsdsd
-class Node:
 
-    def __init__(self, value):
-        self.value = value
-        self.nextNode = None
+class Stacks:
+    def __init__(self):
+        self.count = 0
+        self.storage = {}
 
-    def get_value(self):
-        return self.value
+    # Add an value to the stack(to end of the stack)
+    def push(self, value):
+        self.storage[self.count] = value
+        self.count = self.count + 1
 
-    def set_value(self, value):
-        self.value = value
+    # Remove the last element from the stack and return the removed value
+    def pop(self):
+        # if the stack is empty return None
+        if self.count == 0:
+            return None
+        else:
+            self.count = self.count - 1  # reduce the size of the stack by 1
+            pop_value = self.storage[self.count]  # extract the last value from the stack to a variable
+            del self.storage[self.count]  # remove the value from the stack
+            return pop_value
 
-    def get_next_node(self):
-        return self.nextNode
+    # Get the size of the stack
+    def size(self):
+        return self.count
 
-    def set_next_node(self, next_node):
-        self.nextNode = next_node
+    # Get the last element of the stack(but not remove the value)
+    def peek(self):
+        return self.storage[self.count-1]
+
 
 
