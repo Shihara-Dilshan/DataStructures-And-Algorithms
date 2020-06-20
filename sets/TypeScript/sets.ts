@@ -1,3 +1,5 @@
+/*sets implemeted using typescript*/
+
 interface setsAbstract{
     has(value:any):boolean;
     values():Array<any>;
