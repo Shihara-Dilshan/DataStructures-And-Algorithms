@@ -15,7 +15,7 @@ class Stacks:
     def pop(self):
         # if the stack is empty return None
         if self.count == 0:
-            return None
+            raise ValueError('stack is empty')
         else:
             self.count = self.count - 1  # reduce the size of the stack by 1
             pop_value = self.storage[self.count]  # extract the last value from the stack to a variable
@@ -29,6 +29,7 @@ class Stacks:
     # Get the last element of the stack(but not remove the value)
     def peek(self):
         return self.storage[self.count-1]
+
 
 
 
