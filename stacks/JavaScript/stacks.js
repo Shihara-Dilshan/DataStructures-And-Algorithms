@@ -8,13 +8,13 @@ class Stack {
   }
 
   //Add an value to the stack(to end of the stack)
-  push(value) {
+  push = (value) => {
     this.storage[this.count] = value;
     this.count++;
   }
 
   //Remove the last element from the stack and return the removed value
-  pop() {
+  pop = () => {
     //if the stack is empty return undefined
     if (this.count === 0) {
       return undefined;
@@ -27,17 +27,17 @@ class Stack {
   }
 
   //Get the size of the stack
-  size() {
+  size = () => {
     return this.count;
   }
 
   //Get the last element of the stack(but not remove the value)
-  peek() {
+  peek = () => {
     return this.storage[this.count - 1];
   }
 
   //check the stack is empty or not
-  isEmpty() {
+  isEmpty = () => {
     if (this.count == 0) {
       return true;
     } else {

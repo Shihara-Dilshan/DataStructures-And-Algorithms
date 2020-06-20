@@ -19,13 +19,13 @@ class stacks implements stacksAbstract {
   }
 
   //Add an value to the stack(to end of the stack)
-  public push(value: any): void {
+  public push = (value: any): void => {
     this.storage[this.count] = value;
     this.count++;
   }
 
   //Remove the last element from the stack and return the removed value
-  public pop(): any {
+  public pop = (): any => {
     //if the stack is empty return undefined
     if (this.count === 0) {
       return undefined;
@@ -38,17 +38,17 @@ class stacks implements stacksAbstract {
   }
 
   //Get the size of the stack
-  public size(): number {
+  public size = (): number => {
     return this.count;
   }
 
   //Get the last element of the stack(but not remove the value)
-  public peek(): any {
+  public peek = (): any => {
     return this.storage[this.count - 1];
   }
 
   //check the stack is empty or not
-  isEmpty(): boolean {
+  public isEmpty = (): boolean => {
     if (this.count === 0) {
       return true;
     } else {
