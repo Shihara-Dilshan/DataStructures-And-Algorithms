@@ -71,3 +71,5 @@ class Main{
 
 //do not edit this line
 Main.main();
+
+export default Stack;

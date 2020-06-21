@@ -1,0 +1,7 @@
+1.Check if given expression is balanced expression or not
+	{[{}{}]}[()], {{}{}}, []{}() are balanced expressions.
+	{()}[), {(}) are not balanced.
+	
+2.Check a given word is palindrome or not
+	WIRARIW is palindrome
+
