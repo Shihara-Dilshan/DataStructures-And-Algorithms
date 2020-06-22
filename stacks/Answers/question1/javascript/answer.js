@@ -71,9 +71,9 @@ class RegularChecker {
         let lastElement = this.stack1.pop();//when a closing bracket is found pop the last element from the stack
 
         if (
-          (bracket === "(" && lastElement !== ")") || //check the balanced status
-          (bracket === "[" && lastElement !== "]") ||
-          (bracket === "{" && lastElement !== "}")
+          (bracket === ")" && lastElement !== "(") || //check the balanced status
+          (bracket === "]" && lastElement !== "[") ||
+          (bracket === "}" && lastElement !== "{")
         ) {
             return false;
         }
