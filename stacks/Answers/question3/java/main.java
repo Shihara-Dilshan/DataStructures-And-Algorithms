@@ -20,8 +20,8 @@ class Reverse{
     }
 
     public String ReverseMe() throws Exception {
-        for(char letter : input.toCharArray()){//put string into an array
-            this.stack.push(letter);
+        for(char letter : input.toCharArray()){//put string into an array then itarate
+            this.stack.push(letter);//push items to stack
         }
 
         temp = this.stack.size();//tempory store the size of the stack

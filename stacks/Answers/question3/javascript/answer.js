@@ -56,8 +56,8 @@ class Stack {
 
      ReverseMe(){
 
-      for(let letter of this.input.split("")){//put string into an array
-          this.stack.push(letter);
+      for(let letter of this.input.split("")){//put string into an array then itarate
+          this.stack.push(letter);//push items to the stack
       }
 
       let sizeOfStack = this.stack.size(); //tempory store the size of the stack

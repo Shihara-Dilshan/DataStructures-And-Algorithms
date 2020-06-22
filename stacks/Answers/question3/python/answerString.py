@@ -71,11 +71,11 @@ class Reverse:
 
     def reverse_me(self):
         for letter in self.input:
-            self.stack.push(letter)
+            self.stack.push(letter) # push items to the stack
 
-        size_of_stack = self.stack.size()
+        size_of_stack = self.stack.size() # tempory store the size of the stack
 
-        for x in range(size_of_stack):
+        for x in range(size_of_stack): # create the reverse of the string
             self.reverse_word = self.reverse_word + self.stack.pop()
 
         return self.reverse_word
