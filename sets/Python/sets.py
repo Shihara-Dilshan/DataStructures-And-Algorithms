@@ -73,32 +73,33 @@ class Sets:
         else:
             return False
 
+if __name__ == '__main__':
 
-set1 = Sets()  # create a new set
-set2 = Sets()  # create another new set
+    set1 = Sets()  # create a new set
+    set2 = Sets()  # create another new set
 
-set1.add(1)  # add new items to the set1
-set1.add(2221)
-set1.add(123)  # trying to add a duplicate value
-set1.add(33)
+    set1.add(1)  # add new items to the set1
+    set1.add(2221)
+    set1.add(123)  # trying to add a duplicate value
+    set1.add(33)
 
-set2.add(221)  # add new items to the set2
-set2.add(123)
-set2.add(33)
-set2.add(6)
+    set2.add(221)  # add new items to the set2
+    set2.add(123)
+    set2.add(33)
+    set2.add(6)
 
-print(set1.has(1))  # check if the specific number exist on the set1
-print(set1.values())  # print the values of the set1
+    print(set1.has(1))  # check if the specific number exist on the set1
+    print(set1.values())  # print the values of the set1
 
-set1.remove(1);  # remove a value from the set
-print(set1.values())  # print the values of the set1 after removing values
+    set1.remove(1);  # remove a value from the set
+    print(set1.values())  # print the values of the set1 after removing values
 
-print(set1.size())  # print the size of the set
+    print(set1.size())  # print the size of the set
 
-print(set1.union(set2))  # adding to sets
+    print(set1.union(set2))  # adding to sets
 
-print(set1.intersection(set2))  # get the common value/s between two sets
+    print(set1.intersection(set2))  # get the common value/s between two sets
 
-print(set1.difference(set2))  # get the uncommon value/s between two sets
+    print(set1.difference(set2))  # get the uncommon value/s between two sets
 
-print(set1.subset(set2))  # checking is that set2 is a subset of set1 or not
+    print(set1.subset(set2))  # checking is that set2 is a subset of set1 or not

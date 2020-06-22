@@ -1,3 +1,6 @@
+# implementing stacks using python
+
+
 class Node:
     def __init__(self, value):
         self.value = value
@@ -61,20 +64,22 @@ class Stacks:
             return False
 
 
-stack1 = Stacks(); # create a new stack
+if __name__ == '__main__':
+
+    stack1 = Stacks(); # create a new stack
 
 
-stack1.push(45); # add few elements to the stack 
-stack1.push(98);
-stack1.push(5);
-stack1.push(23);
+    stack1.push(45); # add few elements to the stack
+    stack1.push(98);
+    stack1.push(5);
+    stack1.push(23);
 
-print(stack1.peek()) # print the last element of the stack 
+    print(stack1.peek()) # print the last element of the stack
 
-stack1.pop() # remove the last element from the stack
+    stack1.pop() # remove the last element from the stack
 
-print(stack1.peek()) # print the new last element of the stack 
+    print(stack1.peek()) # print the new last element of the stack
 
-print(stack1.is_empty()) # check the stack is empty or not
+    print(stack1.is_empty()) # check the stack is empty or not
 
-print(stack1.size()) # print the size of the stack
+    print(stack1.size()) # print the size of the stack
