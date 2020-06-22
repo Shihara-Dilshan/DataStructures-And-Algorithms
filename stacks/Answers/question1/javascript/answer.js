@@ -63,6 +63,11 @@ class RegularChecker {
       }
 
       if (bracket === ")" || bracket === "}" || bracket === "]") {
+
+        if(this.stack1.isEmpty()){//stack cannot be empty at this point
+          return false;
+        }
+
         let lastElement = this.stack1.pop();//when a closing bracket is found pop the last element from the stack
 
         if (
