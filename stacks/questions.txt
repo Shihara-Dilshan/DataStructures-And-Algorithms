@@ -5,3 +5,5 @@
 2.Check a given word is palindrome or not
 	WIRARIW is palindrome
 
+3.Reverse String using stack data structure
+	
