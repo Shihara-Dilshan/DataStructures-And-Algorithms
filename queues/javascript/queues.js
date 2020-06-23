@@ -46,8 +46,8 @@
       queues1.add(2);
       queues1.add(11222122);
   
-      queues1.remove();//remove last element from the queue
-      console.log(queues1.peek());//print the first element of the stack
+      queues1.remove();//remove first element from the queue
+      console.log(queues1.peek());//print the last element of the queue
     }
   }
   
