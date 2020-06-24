@@ -22,7 +22,7 @@ class Queue:
     # get the last element of the queue
     def peek(self):
         if self.head is None:
-            pass
+            raise ValueError('queue is empty')
         else:
             return self.tail.value
 
@@ -38,7 +38,7 @@ class Queue:
     # remove last element from the queue
     def remove(self):
         if self.head is None:
-            pass
+            raise ValueError('queue is empty')
         else:
             self.head = self.head.next_node
 
