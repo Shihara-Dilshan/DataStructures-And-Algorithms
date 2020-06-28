@@ -1,0 +1,9 @@
+Find the missing number 
+
+* You are given a list of n-1 integers and these integers are in the range of 1 to n
+
+* one of the integer is missign from the list
+
+* there are no duplicates in list
+
+* write an effient code to find the missing integer
