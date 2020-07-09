@@ -1,4 +1,4 @@
-# Bubble sort using java
+# Bubble sort using python
 
 
 class BubbleSort:
