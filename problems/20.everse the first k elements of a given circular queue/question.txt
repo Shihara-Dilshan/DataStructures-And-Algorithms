@@ -1,0 +1,2 @@
+Write a program to reverse the first k elements of a given circular queue. Assume the queue class is available with insert(), remove() , peek() and size() methods. 
+Hint: Use a stack.
