@@ -73,7 +73,7 @@ class Main {
     bst1.insert(7);
     bst1.insert(33);
     bst1.insert(11);
-    bst1.inOrder();
+  
   };
 }
 
