@@ -1,28 +1,28 @@
 Array
-Find pair with given sum in the array
-Check if subarray with 0 sum is exists or not
-Print all sub-arrays with 0 sum
-Sort binary array in linear time
-Find a duplicate element in a limited range array
-Find maximum length sub-array having given sum
-Find maximum length sub-array having equal number of 0’s and 1’s
-Find maximum product of two integers in an array
-Sort an array containing 0’s, 1’s and 2’s (Dutch National Flag Problem)
-In place merge two sorted arrays
-Merge two arrays by satisfying given constraints
-Find index of 0 to replace to get maximum length sequence of continuous ones
-Shuffle a given array of elements (Fisher–Yates shuffle)
-Rearrange the array with alternate high and low elements
-Find equilibrium index of an array
-Find largest sub-array formed by consecutive integers
-Find majority element (Boyer–Moore Majority Vote Algorithm)
-Move all zeros present in the array to the end
-Replace each element of array with product of every other element without using / operator
-Find Longest Bitonic Subarray in an array
-Longest Increasing Subsequence
-Find maximum difference between two elements in the array by satisfying given constraints
-Maximum Sum Subarray Problem (Kadane’s Algorithm)
-Print continuous subarray with maximum sum
+Find pair with given sum in the array<br />
+Check if subarray with 0 sum is exists or not<br />
+Print all sub-arrays with 0 sum<br />
+Sort binary array in linear time<br />
+Find a duplicate element in a limited range array<br />
+Find maximum length sub-array having given sum<br />
+Find maximum length sub-array having equal number of 0’s and 1’s<br />
+Find maximum product of two integers in an array<br />
+Sort an array containing 0’s, 1’s and 2’s (Dutch National Flag Problem)<br />
+In place merge two sorted arrays<br />
+Merge two arrays by satisfying given constraints<br />
+Find index of 0 to replace to get maximum length sequence of continuous ones<br />
+Shuffle a given array of elements (Fisher–Yates shuffle)<br />
+Rearrange the array with alternate high and low elements<br />
+Find equilibrium index of an array<br />
+Find largest sub-array formed by consecutive integers<br />
+Find majority element (Boyer–Moore Majority Vote Algorithm)<br />
+Move all zeros present in the array to the end<br />
+Replace each element of array with product of every other element without using / operator<br />
+Find Longest Bitonic Subarray in an array<br />
+Longest Increasing Subsequence<br />
+Find maximum difference between two elements in the array by satisfying given constraints<br />
+Maximum Sum Subarray Problem (Kadane’s Algorithm)<br />
+Print continuous subarray with maximum sum<br />
 Maximum Sum Circular Subarray
 Find all distinct combinations of given length — I
 Find all distinct combinations of given length with repetition allowed
