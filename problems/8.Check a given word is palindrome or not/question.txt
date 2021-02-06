@@ -1,5 +1,0 @@
-Check a given word is palindrome or not
-	WIRARIW is palindrome
-
-
-	

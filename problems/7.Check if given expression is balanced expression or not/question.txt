@@ -1,6 +1,0 @@
-1.Check if given expression is balanced expression or not
-	{[{}{}]}[()], {{}{}}, []{}() are balanced expressions.
-	{()}[), {(}) are not balanced.
-	
-
-	

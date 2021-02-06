@@ -1,7 +1,0 @@
-Replace every element with the greatest element on right side
-
-* [1,44,12,6,7,8,2] => [44,12,8,8,8,2,-1]
-
-* replace last element by -1
-
-
