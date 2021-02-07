@@ -34,7 +34,7 @@ void Stack::push(int value){
         cout << "Stack is full" << endl;
         return;
     }else{
-        this->stackArr[++top] = value;
+        this->stackArr[++(this->top)] = value;
     }
 }
 
@@ -43,7 +43,7 @@ int Stack::pop(){
         cout << "Stack is empty" << endl;
         return -1;
     }else{
-        return this->stackArr[top--];
+        return this->stackArr[(this->top)--];
     }
 }
 
@@ -52,7 +52,7 @@ int Stack::peek(){
         cout << "Stack is empty" << endl;
         return -1;
     }else{
-        return this->stackArr[top];
+        return this->stackArr[this->top];
     }
 }
 
@@ -67,15 +67,15 @@ bool Stack::isEmpty(){
 bool Stack::isFull(){
     return this->top == this->size - 1;
 }
-int main(){
+
+int main(int argc, char** argv){
     Stack stack(13);
  
     stack.push(31);
-    stack.push(22);
- 
+    stack.push(22); 
     stack.pop();
+    stack.push(122);
     stack.pop();
- 
     stack.push(333);
 
     return 0;
