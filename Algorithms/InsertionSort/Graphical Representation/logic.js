@@ -1,3 +1,5 @@
+"use strict";
+
 (function(){
    const values = [15,17,11,12,42,63,75,82,18,16,19,15,57,16,20,31,15,22,38,36,45,1,94,7,0,10,20,14];//array to represent
    const oneBar = document.querySelectorAll('.block');//each bar in the gragh(GUI)
@@ -54,7 +56,9 @@
             inputArr[j+1] = current;
             await handleBarAnimation(inputArr);
             await handleUpperArray(inputArr);
-            upperArray[i].style.border = "4px solid grey";
+            upperArray[0].style.border = "4px solid green";
+            upperArray[i].style.border = "4px solid green";
+            
         }
    }
    
