@@ -8,8 +8,11 @@ public class Answer {
   private static Set<Integer> tempSet = new TreeSet<>();
 
   public static void main(String[] args) {
+    //irarate
     for (int i = 0; i < myArr.length - 1; i++) {
       for (int j = i + 1; j < myArr.length; j++) {
+        //put into a TreeSet
+        //sorted manner
         tempSet.add(myArr[j]);
       }
       myArr[i] = (int) tempSet.toArray()[tempSet.toArray().length - 1];
