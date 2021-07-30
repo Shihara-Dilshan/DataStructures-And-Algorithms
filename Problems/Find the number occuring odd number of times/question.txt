@@ -1,0 +1,8 @@
+Find the number occurring odd number of times
+
+* Given an array of positive integers. All numbers occur even number of times exept one number which occurs odd 
+  number of time
+
+* example 
+	[1,2,3,2,3,1,3]
+ 	answer is 3
